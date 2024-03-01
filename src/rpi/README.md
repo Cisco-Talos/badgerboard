@@ -1,0 +1,3 @@
+# parse_xbus_from_fpga
+
+This script is run on a Raspberry Pi with the purpose of ingesting UDP traffic from the FPGA, unwrapping the XBus headers, rewrapping in ModbusTCP, and then sending over loopback where Snort could be running. This functionality could possibly be moved to the FPGA itself, or on alternative hardware, there is nothing holding this implementation to the Raspberry Pi directly, or even requiring a separate processor.

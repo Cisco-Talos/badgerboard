@@ -1,0 +1,11 @@
+# Copyright 2021 Cisco and/or its affiliates
+# SPDX-License-Identifier: Apache-2.0
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER BackplaneReader_AXILite
+	OPTION supported_peripherals = (BackplaneReader_AXILite);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = BackplaneReader_AXILite;
+END DRIVER
