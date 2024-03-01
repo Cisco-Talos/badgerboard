@@ -1,5 +1,5 @@
 # fpga-software
 
-This zip file is an export archive from the Xilinx Vitis software suite. Importing this zip file directly will give you the best results, but feel free to browse internally prior to import. This will contain mostly files generated from Vivado and Vitis directly for header files and C files corresponding to the hardware that was sythesized by Vivado. 
+This code is provided as a reference of the required interrupt handling that is required to happen if a user decides to use a softcore implementation on the FPGA. Due to each softcore implementation being slightly different this is just a reference of what you may see in a tool like Xilinx Vitis once you have settled on a hardware design implementation. Once a user has built the hardware implementation in Vivado and moved to Vitis, all of the generated code should already be populated for the user. Once the code has been populated, this code can be heavily relied upon as a reference implementation.
 
-This zip file is not meant to be used outside of Vitis, but it is likely possible to compile it. The only code of note is the interrupt handler associated with the `BackplaneReader` peripheral.
+The most important code is the setup of the various UDP buffers for sending data and then the `BackplaneReaderInterrupt` code which handles when the `BackplaneReader` peripheral signals an interrupt signaling that data is ready.
