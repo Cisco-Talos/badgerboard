@@ -17,4 +17,4 @@ This research is designed to show the accessibility of backplane network visibil
 
 ## More information / Technical documentation
 
-This code represents the proof of concept state of the research. More information can be found in the accompanying [blog post](blog.talosintelligence.com/badgerboard-research).
+This code represents the proof of concept state of the research. More information can be found in the accompanying [blog post](https://blog.talosintelligence.com/badgerboard-research).
